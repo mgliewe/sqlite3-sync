@@ -1,0 +1,31 @@
+{
+  "name": "sqlite3-sync",
+  "version": "0.1.1",
+  "description": "snchronious sqlite bindings",
+  "main": "./index.js",
+  "author": "Mario Gliewe <mag@nohup.org>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mgliewe/sqlite3-sync.git"
+  },
+  "binary": {
+    "module_name": "sqlite3-sync",
+    "module_path": "./lib/binding/{configuration}/{node_abi}-{platform}-{arch}/",
+    "remote_path": "./{module_name}/v{version}/{configuration}/",
+    "package_name": "{module_name}-v{version}-{node_abi}-{platform}-{arch}.tar.gz",
+    "host": "https://github.com/mgliewe/sqlite3-sync/releases/download",
+    "remote_path": "{version}"
+  },
+  "dependencies": {
+    "node-addon-api": "^3.0.0",
+    "node-pre-gyp": "^0.11.0",
+    "node-pre-gyp-github": "^1.4.3"
+  },
+  "scripts": {
+    "install": "node-pre-gyp install --fallback-to-build",
+    "rebuild": "node-pre-gyp clean configure build",
+    "clean": "node-pre-gyp clean",
+    "package": "node-pre-gyp clean configure build;  node-pre-gyp package",
+    "test": "node index.js"
+  }
+}

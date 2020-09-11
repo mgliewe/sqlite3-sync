@@ -1,0 +1,7 @@
+lib/binding
+*.tgz
+npm-debug.log
+node_modules
+build
+publish.sh
+
