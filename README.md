@@ -1,4 +1,4 @@
-= sqlite3-sync
+# sqlite3-sync
 
 Synchronous Napi-bindings for libsqlite.
 
@@ -6,13 +6,13 @@ While the sqlite3-package for node.js is fine and usefull for server application
 
 So I immplemented a simple Napi based wrapper to libsqlite. Unlike othe rimplementation this package does not use libffi, mainly because i got into trouble using libffi on my target platform, and just wrapping libsqlite seemed to be easier than tweaking fixing foreign code.
 
-== Usage
+## Usage
 
 Install the package via npm:
 
 ``bash
 npm install sqlite3-sync
-''
+``
 
 and use it:
 
