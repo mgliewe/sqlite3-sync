@@ -16,7 +16,7 @@ npm install sqlite3-sync
 
 and use it:
 
-``javascript
+``js
 let Sqlite = require('sqlite3-sync');
 let db = Sqlte('my-db.sqlite');
 
@@ -25,6 +25,7 @@ db.each("SELECT name FROM customer",
     () => { console.log("eof); }
 );
 ``
+
 
 
 
