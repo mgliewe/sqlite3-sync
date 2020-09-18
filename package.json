@@ -1,6 +1,6 @@
 {
   "name": "sqlite3-sync",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "synchronous sqlite bindings",
   "main": "./index.js",
   "author": "Mario Gliewe <mag@nohup.org>",
