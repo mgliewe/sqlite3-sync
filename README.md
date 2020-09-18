@@ -10,13 +10,13 @@ So I immplemented a simple Napi based wrapper to libsqlite. Unlike othe rimpleme
 
 Install the package via npm:
 
-``bash
+```bash
 npm install sqlite3-sync
-``
+```
 
 and use it:
 
-``js
+```javascript
 let Sqlite = require('sqlite3-sync');
 let db = Sqlte('my-db.sqlite');
 
@@ -24,7 +24,7 @@ db.each("SELECT name FROM customer",
     (row) => { console.log(row.customer); },
     () => { console.log("eof); }
 );
-``
+```
 
 
 
